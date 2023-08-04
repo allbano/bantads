@@ -1,4 +1,4 @@
-# Disciplina -> Desenvolvimento de Apliocações Corporativas
+# Disciplina -> Desenvolvimento de Aplicações Corporativas
 
 ## Trabalho Final da Disciplina -> BANTADS
 
@@ -7,4 +7,4 @@
 * Albano Roerto Drescher Von Maywitz
 * Felipe Eduardo
 * Leandro Souza
-* Lucas Barbosa
+* Lucas Ribeiro Carvalho
