@@ -17,6 +17,17 @@
     3. Angular -> 16.2.0
     4. Typescript -> 5.1.3
 
+### Reunião 12/08/2023 - 20hs
+
+Requisitos da Semana
+Albano
+* Perfil: Autenticação e Cliente
+* Requisitos Funcionais: R1 - R2
+
+Lucas
+* Perfil: Gerente
+* Requisitos Funcionais: R9 - R10
+
 ### Criação da Interface de Usuário
 Data 13/08/2023
 * Criado Projeto de Interface de Usuário(ui) no angular
