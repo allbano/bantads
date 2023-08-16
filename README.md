@@ -33,3 +33,7 @@ Data 13/08/2023
 * Criado Projeto de Interface de Usuário(ui) no angular
     * Criado módulo de Autenticação
     * Criado módulo de Cliente
+
+Data 16/08/2023
+    * Criado módulo de Gerente
+    * Criado componente tela-inicial-gerente
