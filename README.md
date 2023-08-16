@@ -35,5 +35,5 @@ Data 13/08/2023
     * Criado módulo de Cliente
 
 Data 16/08/2023
-    * Criado módulo de Gerente
-    * Criado componente tela-inicial-gerente
+* Criado módulo de Gerente
+* Criado componente tela-inicial-gerente
