@@ -1,0 +1,72 @@
+<h2>Gerente - Cadastros Pendentes</h2>
+
+<table class="table table-secondary table-bordered table-striped table-hover">
+    <thead class="table table-primary">
+        <tr class="text-center">
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Salário</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>José Maria</td>
+            <td class="text-center">111.111.111-11</td>
+            <td class="text-center">10.008,37</td>
+            <td class="text-center">
+                <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#recusar" aria-expanded="false"
+                    aria-controls="recusar">Recusar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>José Silva</td>
+            <td class="text-center">555.666.777-88</td>
+            <td class="text-center">5.118,00</td>
+            <td class="text-center">
+                <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#recusar" aria-expanded="false"
+                    aria-controls="recusar">Recusar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Abner Martins</td>
+            <td class="text-center">999.000.111-22</td>
+            <td class="text-center">16.338,00</td>
+            <td class="text-center">
+                <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#recusar" aria-expanded="false"
+                    aria-controls="recusar">Recusar</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+
+<div style="margin-bottom: 8px;" class="collapse" id="recusar">
+    <div class="card">
+        <h3 class="card-header">Recusar</h3>
+        <div class="card-body">
+            <p class="card-text">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="inputState" class="form-label">Motivação</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Selecione</option>
+                        <option>Motivo 1</option>
+                        <option>Motivo 2</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="razao" class="form-label">Razão</label>
+                    <input type="text" class="form-control" id="razao" placeholder="Digite aqui...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<a [routerLink]="['/gerentes/consultar-cliente']" class="btn btn-primary btn-sm">Consultar Cliente</a>&nbsp;
+<a [routerLink]="['/gerentes/consultar-cliente-todos']" class="btn btn-primary btn-sm">Consultar Todos</a>&nbsp;
+<a [routerLink]="['/gerentes/consultar-cliente-melhores']" class="btn btn-primary btn-sm">Consultar Melhores</a>&nbsp;-->
