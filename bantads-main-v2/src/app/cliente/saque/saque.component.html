@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-light-grey">
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png?w=360" class="w3-circle w3-margin-right" style="width:60px">
+            </div>
+            <div class="w3-col s8 w3-bar">
+                <span>Welcome, <strong>Mike</strong></span><br>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="w3-bar-block">
+          <a href="/inicialcliente" onclick="" class="w3-bar-item w3-button w3-padding "><i class="fa fa-home fa-fw"></i>  Inicio</a>
+          <a href="/saque" onclick="" class="w3-bar-item w3-button w3-padding gradient-custom-2" style="color:white"><i class="fa fa-sign-out fa-fw"></i>  Saque</a>
+          <a href="/deposito" onclick="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-in fa-fw"></i>  Depósito</a>
+          <a href="/transferir" onclick="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-exchange fa-fw"></i>  Transferencia</a>
+          <a href="/extrato" onclick="" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sticky-note fa-fw"></i>  Extrato</a>
+          <br><br>
+      </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-cash-register"></i> Saque</b></h5>
+            <div class="w3-row-padding w3-margin-bottom">
+              <div class="w3-quarter">
+                  <div class="w3-container w3-red w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-credit-card-alt w3-xxxlarge"></i></div>
+                      <div class="w3-right">
+                          <h3>3500,00</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>Crédito</h4>
+                  </div>
+              </div>
+              <div class="w3-quarter">
+                  <div class="w3-container w3-blue w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-money-bill-alt w3-xxxlarge"></i></div>
+                      <div class="w3-right">
+                          <h3>2000,00</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>Saldo Atual</h4>
+                  </div>
+              </div>
+              <div class="w3-quarter">
+                  <div class="w3-container w3-teal w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-line-chart w3-xxxlarge"></i></div>
+                      <div class="w3-right">
+                          <h3>7000,00</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>Investimento</h4>
+                  </div>
+              </div>
+              <div class="w3-quarter">
+                  <div class="w3-container w3-orange w3-text-white w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                      <div class="w3-right">
+                          <h3>1</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>Gerente: Fulano de Tal</h4>
+                  </div>
+              </div>
+          </div>
+        </header>
+        <div>
+            <section class="h-100 gradient-form" style="background-color: #eee;margin-bottom: -488px;">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-45">
+                    <div class="col-xl-5">
+                      <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                          <div class="col-sg-8">
+                            <div class="card-body p-md-5 mx-md-4">
+                              <form>
+                                <p style="font-size: 15px">Entre com o valor a ser retirado:</p>
+              
+                                <div class="form-outline mb-4">
+                                  <input numerico type="text" id="valor" name="valor" class="form-control"
+                                    placeholder="Valor R$" required/>
+                                </div>
+                                <div class="text-center pt-1 mb-5 pb-1">
+                                  <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Sacar</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+        
+        <div class="w3-container gradient-custom-2 w3-padding-32" id="menu">
+            <div class="w3-row">
+                <div class="w3-container w3-third">
+                    <h5 class="w3-bottombar w3-border-green">Produtos e Serviços</h5>
+                    <p>Conta corrente</p>
+                    <p>Cartões de crédito</p>
+                    <p>Investimentos</p>
+                </div>
+                <div class="w3-container w3-third">
+                    <h5 class="w3-bottombar w3-border-red">Sobre o BANTADS</h5>
+                    <p>Sobre nós</p>
+                    <p>Educação Financeira</p>
+                    <p>Trabalhe conosco</p>
+                </div>
+                <div class="w3-container w3-third">
+                    <h5 class="w3-bottombar w3-border-orange">Fale com a gente</h5>
+                    <p>Central de Atendimento</p>
+                    <p>SAC</p>
+                    <p>Ética – Canal de denúncia</p>
+                    <p>Ouvidoria</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-16 w3-light-grey">
+            <p>Powered by <a href="#" target="_blank">Equipe 4</a></p>
+        </footer>
+
+        <!-- End page content -->
+    </div>
