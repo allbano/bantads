@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TelaInicialGerenteComponent } from './gerente/tela-inicial-gerente/tela-inicial-gerente.component';
 
 const routes: Routes = [
-    { path: 'gerente', component: TelaInicialGerenteComponent },
+    { path: '', pathMatch: 'full', redirectTo: 'auth' },
+    { path: 'login',
+      loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    }
 ];
 
 @NgModule({
