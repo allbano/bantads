@@ -1,0 +1,38 @@
+
+services:
+  dbmaster2:
+    image: allbano/pg16master
+    container_name: dbmaster
+    volumes:
+      - ./db/master:/var/lib/postgresql/data
+      - ./db/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+      - ./db/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+      - type: tmpfs
+        target: /dev/shm
+    hostname: dbmaster
+    ports:
+      - target: 5432
+        published: 55532
+        protocol: tcp
+        mode: host
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+  dbreplication2:
+    image: allbano/pg16master
+    container_name: dbreplication
+    volumes:
+      - ./db/replication:/var/lib/postgresql/data
+      - ./db/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+      - ./db/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+      - type: tmpfs
+        target: /dev/shm
+    hostname: dbreplication
+    ports:
+      - target: 5432
+        published: 55534
+        protocol: tcp
+        mode: host
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+        #- PGDATA=/tmp
+
