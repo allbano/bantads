@@ -1,0 +1,4 @@
+db/master
+db/master/*
+db/replication
+db/replication/*
